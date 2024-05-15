@@ -41,12 +41,12 @@ const App = () => {
   const handleCallbackResp = (resp) => {
     console.log("Encoded JWT token: ", resp.credential);
     setIsSignedIn(true);
-    alert('You have login successfully!');
+    alert('Welcome,You have login successfully!');
   };
 
   const handleSignOut = () => {
     setIsSignedIn(false);
-    alert('You have successfully logged out!');
+    alert('You have successfully logged out,Thank you!');
   };
 
 
