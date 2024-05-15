@@ -39,7 +39,7 @@ const UpdateEvent = ({ eventData, onCancelUpdate }) => {
     };
     console.log(payload);
         try {
-            const response = await fetch(`http://localhost:8000/api/events/update/${eventData['id']}`, {
+            const response = await fetch(`https://eventmanagement-backend-qcka.onrender.com/api/events/update/${eventData['id']}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json'
