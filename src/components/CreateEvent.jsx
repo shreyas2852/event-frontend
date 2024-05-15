@@ -24,7 +24,7 @@ const CreateEvent = ({ onCancleCreate}) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch(`https://eventmanagement-backend-qcka.onrender.com/api/create/event`, {
+      const response = await fetch(`https://event-backend-k3mh.onrender.com/api/create/event`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

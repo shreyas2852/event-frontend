@@ -34,8 +34,9 @@ const EventGuide = () => {
 
   const fetchEvents = async () => {
     try {
-      const response = await fetch(`https://eventmanagement-backend-qcka.onrender.com/api/data`);
+      const response = await fetch(`https://event-backend-k3mh.onrender.com/api/data`);
       const data = await response.json();
+      console.log("Data: ", data);
       if (!response.ok) {
         throw new Error('Failed to Fetch Data: ' + response.status);
       }
@@ -76,7 +77,7 @@ const EventGuide = () => {
 
   const handleDeleteEvent = async (eventId) => {
     try {
-      await fetch(`https://eventmanagement-backend-qcka.onrender.com/api/events/delete/${eventId}`, {
+      await fetch(`https://event-backend-k3mh.onrender.com/api/events/delete/${eventId}`, {
       method: 'DELETE',
     });
 
